@@ -13,10 +13,9 @@ pytorch >=1.11</br>
 scikit-learn >=1.0</br>
 
 ## Usage
-* **For normal data separation**</br>
-> ```python train.py```</br>
-+ **For strict data separation**</br>
-> `python train_HardTrainTest.py`</br>
+We provided an example dataset under datasets/example/mESC/ for running gene regulatory (or causal) inference using GRACE. It takes gene expression (**N✖M**) and an adjacent matrix (**M✖M**) representing the prior regulatory graph as input.
+* For **normal data separation**, run `python train.py`</br>
++ For **strict data separation**, run `python train_HardTrainTest.py`</br>
 * The hyperparameters of GRACE can be modified in **param.yaml** file. To apply causal inference, just set flag as **True**.
 
 
