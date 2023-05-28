@@ -13,12 +13,10 @@ pytorch >=1.11</br>
 scikit-learn >=1.0</br>
 
 ## Usage
-**For normal data separation**</br>
-`<python train.py>`
-</br></br>
-**For strict data separation**</br>
-`<python train_HardTrainTest.py>`</br>
-</br>
-The hyperparameters of GRACE can be modified in **param.yaml** file. To apply causal inference, just set flag as **True**.
+* **For normal data separation**</br>
+> ```python train.py```</br>
++ **For strict data separation**</br>
+> `python train_HardTrainTest.py`</br>
+* The hyperparameters of GRACE can be modified in **param.yaml** file. To apply causal inference, just set flag as **True**.
 
 
