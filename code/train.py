@@ -43,8 +43,8 @@ device = torch.device("cuda" if args.cuda else "cpu")
 set_rng_seed(args.seed)
 
 # load data
-data_path = "./Dataset/example/mESC/ExpressionData.csv"
-label_path = "./Dataset/example/mESC/refNetwork.csv"
+data_path = "./example/mESC/ExpressionData.csv"
+label_path = "./example/mESC/refNetwork.csv"
 
 if args.flag:
     adj_train, feature, train_ids, val_ids, test_ids, train_labels, val_labels, test_labels = load_sc_causal_data(data_path, label_path)
