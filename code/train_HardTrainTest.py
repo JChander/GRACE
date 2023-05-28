@@ -57,15 +57,15 @@ for dataset in datasets:
         set_rng_seed(seed)
 
         # load data
-        test_data = "./Dataset/example/" + dataset + " 500/Test_set.csv"
-        train_data = "./Dataset/example/" + dataset + " 500/Train_set.csv"
-        val_data = "./Dataset/example/" + dataset + " 500/Validation_set.csv"
+        test_data = "./example/" + dataset + "/Test_set.csv"
+        train_data = "./example/" + dataset + "/Train_set.csv"
+        val_data = "./example/" + dataset + "/Validation_set.csv"
 
         train_ids, train_labels = read_HardSplit_data(train_data)
         val_ids, val_labels = read_HardSplit_data(val_data)
         test_ids, test_labels = read_HardSplit_data(test_data)
 
-        exp_data = pd.read_csv("./Dataset/example/" + dataset + "/TFs+500/BL--ExpressionData.csv", header = 0, index_col = 0).T
+        exp_data = pd.read_csv("./example/" + dataset + "/ExpressionData.csv", header = 0, index_col = 0).T
         exp_data = exp_data.transform(lambda x: np.log(x + 1))
         features = exp_data.T.values
 
