@@ -1,0 +1,53 @@
+gcn:
+  cuda: True
+  seed: 72
+  lr: 0.005
+  weight_decay: 0.0005
+  hidden: 256
+  dropout: 0.1
+  epoches: 900
+  epoch_base_model: 1200
+  fastmode: False
+  flag: False
+  nz: 16
+  ns: 64
+  alpha: 0.35
+  KL_loss: 0.01
+  BCE_loss: 0.01
+  z_loss: 0.005
+
+gcn10runs:
+  cuda: True
+  seed: [42, 56, 72, 83, 98, 8, 32, 23, 13, 62]
+  lr: 0.005
+  weight_decay: 0.0005
+  hidden: 256
+  dropout: 0.1
+  epoches: 900
+  epoch_base_model: 1500
+  fastmode: False
+  flag: False
+  nz: 16
+  ns: 64
+  alpha: 0.35
+  KL_loss: 0.01
+  BCE_loss: 0.01
+  z_loss: 0.005
+
+gat:
+  cuda: True
+  seed: 72
+  lr: 0.005
+  weight_decay: 0.0005
+  hidden: 8
+  dropout: 0.7
+  epoches: 900
+  epoch_base_model: 1500
+  fastmode: False
+  flag: False
+  nz: 16
+  ns: 8
+  alpha: 0.2
+  KL_loss: 0.01
+  BCE_loss: 0.01
+  z_loss: 0.005
