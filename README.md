@@ -18,4 +18,14 @@ We provided an example dataset under example/mESC/ for running gene regulatory (
 + For **strict data separation**, run `python train_HardTrainTest.py`</br>
 * The hyperparameters of GRACE can be modified in **param.yaml** file. To apply causal inference, just set flag as **True**.
 
-
+## Citing
+If you find our paper and code useful, please consider citing the [paper](https://ieeexplore.ieee.org/document/10562353):
+```
+@article{GRACE,
+  title={GRACE: Unveiling Gene Regulatory Networks With Causal Mechanistic Graph Neural Networks in Single-Cell RNA-Sequencing Data},
+  author={Jiacheng, Wang and Yaojia, Chen and Quan, Zou},
+  journal={IEEE Transactions on Neural Networks and Learning Systems},
+  doi = {10.1109/TNNLS.2024.3412753},
+  year={2024},
+}
+```
